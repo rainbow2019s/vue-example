@@ -1,0 +1,7 @@
+大型应用构建模板 单页面
+
+1. 安装node.js
+2. 安装git
+3. 进入工程目录 npm install
+4. 编译 webpack
+5. 查看

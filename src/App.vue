@@ -2,7 +2,9 @@
   <div id="app">
     <img src="./assets/logo.png">
     <ul>
-      <li>
+      <li v-for="book in books">
+        <a v-bind:href="book.url">{{book.name }}</a>
+      </li>  
     </ul>
     
   </div>
@@ -14,7 +16,9 @@ module.exports={
     return  {
       msg: 'hello Vue.JS!22222'+new Date(),
       seen:false,
-      books:['Java','Oracle','NodeJS','C#']
+      books:[{name:'Java',url:'http://www.163.com'},
+        {name:'Oracle',url:'http://www.baidu.com'},
+        {name:'NodeJS',url:'http://www.sohu.com'}]
     }
   }
 }
